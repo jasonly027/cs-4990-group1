@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "storage": {
+      "videoStorage": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ca-central-1:036134298501:layer:cs4990-group1-ffmpegLib:1"
+    }
+  ]
+}
