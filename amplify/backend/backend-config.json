@@ -28,7 +28,7 @@
     }
   },
   "function": {
-    "cs4990group1FfmpegPy": {
+    "cs4990group1ffmpegPy": {
       "build": true,
       "dependsOn": [
         {
@@ -44,22 +44,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_cs4990group1FfmpegPy_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1FfmpegPy"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1FfmpegPy_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1FfmpegPy"
-        }
-      ]
-    },
     "AMPLIFY_function_cs4990group1awsSdk_deploymentBucketName": {
       "usedBy": [
         {
@@ -89,6 +73,22 @@
         {
           "category": "function",
           "resourceName": "cs4990group1ffmpegLayer"
+        }
+      ]
+    },
+    "AMPLIFY_function_cs4990group1ffmpegPy_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cs4990group1ffmpegPy"
+        }
+      ]
+    },
+    "AMPLIFY_function_cs4990group1ffmpegPy_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cs4990group1ffmpegPy"
         }
       ]
     }

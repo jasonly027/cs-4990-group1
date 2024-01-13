@@ -27,9 +27,9 @@
           "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
           "s3Key": "amplify-builds/cs4990group1awsSdk-LambdaLayerVersionea6cf079-build.zip"
         },
-        "cs4990group1FfmpegPy": {
+        "cs4990group1ffmpegPy": {
           "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
-          "s3Key": "amplify-builds/cs4990group1FfmpegPy-335279425a2b65357075-build.zip"
+          "s3Key": "amplify-builds/cs4990group1ffmpegPy-5a593337554f552b534d-build.zip"
         }
       }
     }
