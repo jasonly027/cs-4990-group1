@@ -1,4 +1,20 @@
 {
+  "api": {
+    "convertLink": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cs4990group1convert"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "cs4990group1c0e49957": {
       "customAuth": false,
@@ -27,7 +43,40 @@
       "service": "Cognito"
     }
   },
-  "function": {},
+  "function": {
+    "cs4990group1convert": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "BucketName"
+          ],
+          "category": "storage",
+          "resourceName": "videoStorage"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_cs4990group1convert_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cs4990group1convert"
+        }
+      ]
+    },
+    "AMPLIFY_function_cs4990group1convert_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cs4990group1convert"
+        }
+      ]
+    }
+  },
   "storage": {
     "videoStorage": {
       "dependsOn": [],

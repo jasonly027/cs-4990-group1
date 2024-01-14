@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/convert": {
+      "name": "/convert",
+      "lambdaFunction": "cs4990group1convert",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

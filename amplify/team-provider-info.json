@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-cs4990group1-dev-11839-unauthRole",
       "StackName": "amplify-cs4990group1-dev-11839",
       "StackId": "arn:aws:cloudformation:ca-central-1:036134298501:stack/amplify-cs4990group1-dev-11839/bf397c50-ad3d-11ee-9d94-028a1323d49c",
-      "AmplifyAppId": "d1stx9i8zv7mqj"
+      "AmplifyAppId": "d1stx9i8zv7mqj",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cs4990group1-dev-11839-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
@@ -17,6 +18,15 @@
       },
       "storage": {
         "videoStorage": {}
+      },
+      "function": {
+        "cs4990group1convert": {
+          "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
+          "s3Key": "amplify-builds/cs4990group1convert-586832765047672b6234-build.zip"
+        }
+      },
+      "api": {
+        "convertLink": {}
       }
     }
   }
