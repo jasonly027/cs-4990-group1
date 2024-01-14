@@ -28,22 +28,7 @@
       "service": "Cognito"
     }
   },
-  "function": {
-    "cs4990group1ffmpegPython": {
-      "build": true,
-      "dependsOn": [
-        {
-          "attributes": [
-            "BucketName"
-          ],
-          "category": "storage",
-          "resourceName": "videoStorage"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
+  "function": {},
   "storage": {
     "videoStorage": {
       "dependsOn": [],
