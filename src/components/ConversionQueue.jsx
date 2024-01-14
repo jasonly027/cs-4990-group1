@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Download, Trash2 } from "lucide-react";
 
 export function ConversionQueue({ filesState }) {
