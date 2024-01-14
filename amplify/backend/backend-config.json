@@ -1,20 +1,5 @@
 {
-  "api": {
-    "ffmpeg": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegPython"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    }
-  },
+  "api": {},
   "auth": {
     "cs4990group1c0e49957": {
       "customAuth": false,

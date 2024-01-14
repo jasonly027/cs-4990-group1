@@ -1,11 +1,4 @@
 export type AmplifyDependentResourcesAttributes = {
-  "api": {
-    "ffmpeg": {
-      "ApiId": "string",
-      "ApiName": "string",
-      "RootUrl": "string"
-    }
-  },
   "auth": {
     "cs4990group1c0e49957": {
       "AppClientID": "string",
@@ -15,15 +8,6 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolArn": "string",
       "UserPoolId": "string",
       "UserPoolName": "string"
-    }
-  },
-  "function": {
-    "cs4990group1ffmpegPython": {
-      "Arn": "string",
-      "LambdaExecutionRole": "string",
-      "LambdaExecutionRoleArn": "string",
-      "Name": "string",
-      "Region": "string"
     }
   },
   "storage": {

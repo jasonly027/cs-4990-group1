@@ -24,9 +24,6 @@
           "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
           "s3Key": "amplify-builds/cs4990group1ffmpegPython-74495542356b5566486c-build.zip"
         }
-      },
-      "api": {
-        "ffmpeg": {}
       }
     }
   }
