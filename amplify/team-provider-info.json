@@ -29,7 +29,7 @@
         },
         "cs4990group1ffmpegPy": {
           "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
-          "s3Key": "amplify-builds/cs4990group1ffmpegPy-5a593337554f552b534d-build.zip"
+          "s3Key": "amplify-builds/cs4990group1ffmpegPy-5a2b75514b7975433733-build.zip"
         }
       }
     }
