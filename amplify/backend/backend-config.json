@@ -44,24 +44,6 @@
       "service": "Lambda"
     }
   },
-  "parameters": {
-    "AMPLIFY_function_cs4990group1ffmpegPython_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegPython"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1ffmpegPython_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegPython"
-        }
-      ]
-    }
-  },
   "storage": {
     "videoStorage": {
       "dependsOn": [],
