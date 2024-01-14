@@ -17,6 +17,20 @@
       },
       "storage": {
         "videoStorage": {}
+      },
+      "function": {
+        "cs4990group1ffmpegLayer": {
+          "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
+          "s3Key": "amplify-builds/cs4990group1ffmpegLayer-LambdaLayerVersion25a8e4b6-build.zip"
+        },
+        "cs4990group1awsSdk": {
+          "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
+          "s3Key": "amplify-builds/cs4990group1awsSdk-LambdaLayerVersionea6cf079-build.zip"
+        },
+        "cs4990group1ffmpegPy": {
+          "deploymentBucketName": "amplify-cs4990group1-dev-11839-deployment",
+          "s3Key": "amplify-builds/cs4990group1ffmpegPy-5a2b75514b7975433733-build.zip"
+        }
       }
     }
   }

@@ -27,40 +27,7 @@
       "service": "Cognito"
     }
   },
-  "function": {
-    "cs4990group1ffmpegPy": {
-      "build": true,
-      "dependsOn": [
-        {
-          "attributes": [
-            "BucketName"
-          ],
-          "category": "storage",
-          "resourceName": "videoStorage"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_cs4990group1ffmpegPy_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegPy"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1ffmpegPy_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegPy"
-        }
-      ]
-    }
-  },
+  "function": {},
   "storage": {
     "videoStorage": {
       "dependsOn": [],
