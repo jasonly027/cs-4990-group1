@@ -44,38 +44,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_cs4990group1awsSdk_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1awsSdk"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1awsSdk_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1awsSdk"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1ffmpegLayer_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegLayer"
-        }
-      ]
-    },
-    "AMPLIFY_function_cs4990group1ffmpegLayer_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "cs4990group1ffmpegLayer"
-        }
-      ]
-    },
     "AMPLIFY_function_cs4990group1ffmpegPy_deploymentBucketName": {
       "usedBy": [
         {
