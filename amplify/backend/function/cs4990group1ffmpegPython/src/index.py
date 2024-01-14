@@ -1,5 +1,7 @@
+import json
 import os
 import subprocess
+import shlex
 import boto3
 from urllib.parse import urlparse
 

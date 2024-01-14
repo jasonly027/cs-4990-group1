@@ -51,12 +51,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "cs4990group1convert",
+            "cs4990group1ffmpegPython",
             {
               "Fn::Join": [
                 "",
                 [
-                  "cs4990group1convert",
+                  "cs4990group1ffmpegPython",
                   "-",
                   {
                     "Ref": "env"
@@ -98,12 +98,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "cs4990group1LambdaRoleb91094f9",
+            "cs4990group1LambdaRole82d703ff",
             {
               "Fn::Join": [
                 "",
                 [
-                  "cs4990group1LambdaRoleb91094f9",
+                  "cs4990group1LambdaRole82d703ff",
                   "-",
                   {
                     "Ref": "env"

@@ -1,6 +1,6 @@
 {
   "api": {
-    "convertLink": {
+    "ffmpeg": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "cs4990group1convert"
+          "resourceName": "cs4990group1ffmpegPython"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -44,7 +44,7 @@
     }
   },
   "function": {
-    "cs4990group1convert": {
+    "cs4990group1ffmpegPython": {
       "build": true,
       "dependsOn": [
         {
@@ -60,19 +60,19 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_cs4990group1convert_deploymentBucketName": {
+    "AMPLIFY_function_cs4990group1ffmpegPython_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "cs4990group1convert"
+          "resourceName": "cs4990group1ffmpegPython"
         }
       ]
     },
-    "AMPLIFY_function_cs4990group1convert_s3Key": {
+    "AMPLIFY_function_cs4990group1ffmpegPython_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "cs4990group1convert"
+          "resourceName": "cs4990group1ffmpegPython"
         }
       ]
     }
