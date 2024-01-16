@@ -1,21 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { Download, Trash2 } from "lucide-react";
 
+const statusStyling = {
+  Queued: "text-gray-500",
+  Converting: "text-gray-500",
+  Completed: "text-green-500",
+};
+
 export function ConversionQueue({ filesState }) {
   const [files, setFiles] = filesState;
 
   const removeFile = (indexToRemove) => {
+    console.log(indexToRemove);
     setFiles(files.filter((_, index) => index !== indexToRemove));
   };
   const clearAllFiles = () => {
     setFiles([]);
   };
-
+  const handleDownload = (file) => {
+    console.log("Download " + file.File.name);
+  };
   return (
     <div className="grid gap-2">
-      <h2 className="text-lg font-semibold">Conversion Queue</h2>
+      <div className="flex justify-between">
+        <h2 className="text-lg font-semibold">Conversion Queue</h2>
+        <Button
+          className="text-sm"
+          size="sm"
+          variant="destructive"
+          onClick={clearAllFiles}
+        >
+          Clear All
+        </Button>
+      </div>
+
       <div className="grid gap-2 border border-gray-200 rounded-md p-4">
-        {/* Uploaded File Queue */}
         <>
           {files.map((file, index) => (
             <div
@@ -30,25 +49,28 @@ export function ConversionQueue({ filesState }) {
                   onClick={() => removeFile(index)}
                 >
                   <Trash2 className="w-5 h-5" />
-                  <span className="sr-only">Remove {file.name}</span>
+                  {/* <span className="sr-only">Remove {file.File.name}</span> */}
                 </Button>
                 <p key={index} className="font-medium">
-                  {file.name}
+                  {file.File.name}
                 </p>
               </div>
 
               <div className="flex items-center gap-2">
-                {/* File Status */}
-                <p className="text-green-500">Completed</p>
-                <Button
-                  className="w-8 h-8"
-                  size="icon"
-                  variant="ghost"
-                  onClick={() => console.log("Download " + file.name)}
-                >
-                  <Download className="w-5 h-5" />
-                  <span className="sr-only">Download {file.name}</span>
-                </Button>
+                <p className={statusStyling[file.status]}>{file.status}</p>
+                {file.status === "Completed" && (
+                  <>
+                    <Button
+                      className="w-8 h-8"
+                      size="icon"
+                      variant="ghost"
+                      onClick={handleDownload}
+                    >
+                      <Download className="w-5 h-5" />
+                      <span className="sr-only">Download {file.File.name}</span>
+                    </Button>
+                  </>
+                )}
               </div>
             </div>
           ))}
@@ -70,10 +92,6 @@ export function ConversionQueue({ filesState }) {
           <p className="text-gray-500">Queued</p>
         </div>
       </div>
-
-      <Button className="mt-4" onClick={clearAllFiles}>
-        Clear All
-      </Button>
     </div>
   );
 }
