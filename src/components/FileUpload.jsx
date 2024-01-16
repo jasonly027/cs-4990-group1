@@ -14,7 +14,7 @@ export const initialFileState = {
   width: "",
   height: "",
   progress: 0,
-  link: ""
+  link: "",
 };
 
 export function FileUpload({ currentFileState, filesState }) {
@@ -49,8 +49,8 @@ export function FileUpload({ currentFileState, filesState }) {
       });
       return;
     }
-
-    convertFile(currentFileState)
+    const fileIndex = files.length;
+    convertFile(currentFileState, filesState, fileIndex);
 
     setFiles([...files, currentFile]);
     setCurrentFile(initialFileState);
