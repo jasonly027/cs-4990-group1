@@ -1,22 +1,25 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import { convertFile } from "./backend/upload";
 
 import { FileUploadSettings } from "@/components/FileUploadSettings";
 
-const initialFileState = {
+export const initialFileState = {
   File: null,
   outputFormat: "",
   framesPerSecond: "",
   width: "",
   height: "",
+  progress: 0,
+  link: ""
 };
 
-export function FileUpload({ filesState }) {
+export function FileUpload({ currentFileState, filesState }) {
+  const [currentFile, setCurrentFile] = currentFileState;
   const [files, setFiles] = filesState;
-  const [currentFile, setCurrentFile] = useState(initialFileState);
   const fileInputRef = useRef(null);
 
   const { toast } = useToast();
@@ -46,6 +49,8 @@ export function FileUpload({ filesState }) {
       });
       return;
     }
+
+    convertFile(currentFileState)
 
     setFiles([...files, currentFile]);
     setCurrentFile(initialFileState);
