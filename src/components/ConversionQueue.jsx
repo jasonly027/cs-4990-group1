@@ -18,7 +18,7 @@ export function ConversionQueue({ filesState }) {
     setFiles([]);
   };
   const handleDownload = (file) => {
-    console.log("Download " + file.File.name);
+    window.open(file.link, "_blank");
   };
   return (
     <div className="grid gap-2">
@@ -48,7 +48,6 @@ export function ConversionQueue({ filesState }) {
                 onClick={() => removeFile(index)}
               >
                 <Trash2 className="w-5 h-5" />
-                {/* <span className="sr-only">Remove {file.File.name}</span> */}
               </Button>
               <p key={index} className="font-medium">
                 {file.File.name}
@@ -63,7 +62,7 @@ export function ConversionQueue({ filesState }) {
                     className="w-8 h-8"
                     size="icon"
                     variant="ghost"
-                    onClick={handleDownload}
+                    onClick={() => handleDownload(file)}
                   >
                     <Download className="w-5 h-5" />
                     <span className="sr-only">Download {file.File.name}</span>
