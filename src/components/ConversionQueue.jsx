@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Download, Trash2 } from "lucide-react";
 
 const statusStyling = {
@@ -55,6 +56,7 @@ export function ConversionQueue({ filesState }) {
             </div>
 
             <div className="flex items-center gap-2">
+              <Badge className="text-sm">{file.outputFormat}</Badge>
               <p className={statusStyling[file.status]}>{file.status}</p>
               {file.status === "Completed" && (
                 <>
